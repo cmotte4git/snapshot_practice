@@ -1,0 +1,11 @@
+scd_snapshot:
+  outputs:
+    dev:
+      type: duckdb
+      path: /home/cyril/Documents/vscode_project/snapshot_practice/dbt.duckdb
+      extensions:
+        - httpfs
+        - parquet
+      settings:
+        s3_region: eu-west-1
+  target: dev
